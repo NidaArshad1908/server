@@ -15,6 +15,8 @@ import { FunctionslistModule } from './functionslist/functionslist.module';
 import { Functionslist } from './functionslist/entities/functionslist.entity';
 import { CountrieslistModule } from './countrieslist/countrieslist.module';
 import { Countrieslist } from './countrieslist/entities/countrieslist.entity';
+import { SmstemplateslistModule } from './smstemplateslist/smstemplateslist.module';
+import { Smstemplateslist } from './smstemplateslist/entities/smstemplateslist.entity';
 
 @Module({
   imports: [
@@ -33,6 +35,7 @@ import { Countrieslist } from './countrieslist/entities/countrieslist.entity';
         Usersrolelist,
         Functionslist,
         Countrieslist,
+        Smstemplateslist,
       ],
       synchronize: true,
     }),
@@ -43,6 +46,7 @@ import { Countrieslist } from './countrieslist/entities/countrieslist.entity';
     UsersrolelistModule,
     FunctionslistModule,
     CountrieslistModule,
+    SmstemplateslistModule,
   ],
   controllers: [AppController],
   providers: [AppService],
