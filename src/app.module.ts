@@ -9,6 +9,10 @@ import { Worker } from './worker/entities/worker.entity';
 import { WorkerModule } from './worker/worker.module';
 import { UsersList } from './users-list/entities/users-list.entity';
 import { UsersListModule } from './users-list/users-list.module';
+import { UsersrolelistModule } from './usersrolelist/usersrolelist.module';
+import { Usersrolelist } from './usersrolelist/entities/usersrolelist.entity';
+import { FunctionslistModule } from './functionslist/functionslist.module';
+import { Functionslist } from './functionslist/entities/functionslist.entity';
 
 @Module({
   imports: [
@@ -20,13 +24,15 @@ import { UsersListModule } from './users-list/users-list.module';
       username: 'root',
       password: 'ItsAbout@MySal8',
       database: 'tailor',
-      entities: [User, Worker, UsersList],
+      entities: [User, Worker, UsersList, Usersrolelist, Functionslist],
       synchronize: true,
     }),
+    TypeOrmModule.forFeature([User]),
     UserModule,
     UsersListModule,
     WorkerModule,
-    TypeOrmModule.forFeature([User]),
+    UsersrolelistModule,
+    FunctionslistModule,
   ],
   controllers: [AppController],
   providers: [AppService],
