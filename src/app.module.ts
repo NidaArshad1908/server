@@ -13,6 +13,8 @@ import { UsersrolelistModule } from './usersrolelist/usersrolelist.module';
 import { Usersrolelist } from './usersrolelist/entities/usersrolelist.entity';
 import { FunctionslistModule } from './functionslist/functionslist.module';
 import { Functionslist } from './functionslist/entities/functionslist.entity';
+import { CountrieslistModule } from './countrieslist/countrieslist.module';
+import { Countrieslist } from './countrieslist/entities/countrieslist.entity';
 
 @Module({
   imports: [
@@ -24,7 +26,14 @@ import { Functionslist } from './functionslist/entities/functionslist.entity';
       username: 'root',
       password: 'ItsAbout@MySal8',
       database: 'tailor',
-      entities: [User, Worker, UsersList, Usersrolelist, Functionslist],
+      entities: [
+        User,
+        Worker,
+        UsersList,
+        Usersrolelist,
+        Functionslist,
+        Countrieslist,
+      ],
       synchronize: true,
     }),
     TypeOrmModule.forFeature([User]),
@@ -33,6 +42,7 @@ import { Functionslist } from './functionslist/entities/functionslist.entity';
     WorkerModule,
     UsersrolelistModule,
     FunctionslistModule,
+    CountrieslistModule,
   ],
   controllers: [AppController],
   providers: [AppService],
