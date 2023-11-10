@@ -56,7 +56,7 @@ export class CountrieslistController {
   })
   async createOrUpdate(@Body() todo: Countrieslist) {
     console.log(
-      '🚀 ~ file: countrieslist.controller.ts:44 ~ Countrieslist ~ create ~ Countrieslist',
+      '🚀 ~ file: countrieslist.controller.ts:44 ~ CountrieslistController ~ create ~ Countrieslist',
       todo,
     );
     return await this.countrieslistService.createOrUpdate(todo);

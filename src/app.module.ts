@@ -19,6 +19,8 @@ import { SmstemplateslistModule } from './smstemplateslist/smstemplateslist.modu
 import { Smstemplateslist } from './smstemplateslist/entities/smstemplateslist.entity';
 import { BrandrateslistModule } from './brandrateslist/brandrateslist.module';
 import { Brandrateslist } from './brandrateslist/entities/brandrateslist.entity';
+import { CustomerslistModule } from './customerslist/customerslist.module';
+import { Customerslist } from './customerslist/entities/customerslist.entity';
 
 @Module({
   imports: [
@@ -39,6 +41,7 @@ import { Brandrateslist } from './brandrateslist/entities/brandrateslist.entity'
         Countrieslist,
         Smstemplateslist,
         Brandrateslist,
+        Customerslist,
       ],
       synchronize: true,
     }),
@@ -51,6 +54,7 @@ import { Brandrateslist } from './brandrateslist/entities/brandrateslist.entity'
     CountrieslistModule,
     SmstemplateslistModule,
     BrandrateslistModule,
+    CustomerslistModule,
   ],
   controllers: [AppController],
   providers: [AppService],
