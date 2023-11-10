@@ -21,6 +21,16 @@ import { BrandrateslistModule } from './brandrateslist/brandrateslist.module';
 import { Brandrateslist } from './brandrateslist/entities/brandrateslist.entity';
 import { CustomerslistModule } from './customerslist/customerslist.module';
 import { Customerslist } from './customerslist/entities/customerslist.entity';
+import { OrderslistModule } from './orderslist/orderslist.module';
+import { SaleInvoiceslistModule } from './sale-invoiceslist/sale-invoiceslist.module';
+import { WorkerslistModule } from './workerslist/workerslist.module';
+import { WorkOrderslistModule } from './work-orderslist/work-orderslist.module';
+import { TotalSaleslistModule } from './total-saleslist/total-saleslist.module';
+import { Orderslist } from './orderslist/entities/orderslist.entity';
+import { SaleInvoiceslist } from './sale-invoiceslist/entities/sale-invoiceslist.entity';
+import { TotalSaleslist } from './total-saleslist/entities/total-saleslist.entity';
+import { Workerslist } from './workerslist/entities/workerslist.entity';
+import { WorkOrderslist } from './work-orderslist/entities/work-orderslist.entity';
 
 @Module({
   imports: [
@@ -42,6 +52,11 @@ import { Customerslist } from './customerslist/entities/customerslist.entity';
         Smstemplateslist,
         Brandrateslist,
         Customerslist,
+        Orderslist,
+        SaleInvoiceslist,
+        Workerslist,
+        WorkOrderslist,
+        TotalSaleslist,
       ],
       synchronize: true,
     }),
@@ -55,6 +70,11 @@ import { Customerslist } from './customerslist/entities/customerslist.entity';
     SmstemplateslistModule,
     BrandrateslistModule,
     CustomerslistModule,
+    OrderslistModule,
+    SaleInvoiceslistModule,
+    WorkerslistModule,
+    WorkOrderslistModule,
+    TotalSaleslistModule,
   ],
   controllers: [AppController],
   providers: [AppService],
