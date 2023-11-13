@@ -71,7 +71,7 @@ export class Customerslist {
     example: 'Customers List Last Updated',
     description: 'Title of the Customers List',
   })
-  lastupdate: string;
+  lastupdated: string;
 
   @Column()
   @ApiProperty({
