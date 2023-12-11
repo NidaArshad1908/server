@@ -64,6 +64,7 @@ export class UserController {
   }
 
   @Get('user')
+  // @UseGuards(AuthGuard)
   async user(@Req() request: Request) {
     // try {
     const cookie = request.cookies['jwt'];
@@ -84,6 +85,7 @@ export class UserController {
     const { password, ...result } = user;
 
     return result;
+    // return { username: user.name };
     // } catch (e) {
     //   throw new UnauthorizedException();
     // }
