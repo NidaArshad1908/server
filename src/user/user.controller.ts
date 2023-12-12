@@ -66,29 +66,29 @@ export class UserController {
   @Get('user')
   // @UseGuards(AuthGuard)
   async user(@Req() request: Request) {
-    // try {
-    const cookie = request.cookies['jwt'];
-    console.log('cookie+++', cookie);
+    try {
+      const cookie = request.cookies['jwt'];
+      // console.log('cookie+++', cookie);
 
-    const data = await this.jwtService.verifyAsync(cookie);
-    console.log('data+++', data);
+      const data = await this.jwtService.verifyAsync(cookie);
+      console.log('data+++', data);
 
-    if (!data) {
+      if (!data) {
+        throw new UnauthorizedException();
+      }
+
+      const user = await this.userService.findOne({
+        where: { id: data['id'] },
+      });
+      console.log('user+++', user);
+
+      const { password, ...result } = user;
+
+      return result;
+      // return { username: user.name };
+    } catch (e) {
       throw new UnauthorizedException();
     }
-
-    const user = await this.userService.findOne({
-      where: { id: data['id'] },
-    });
-    console.log('user+++', user);
-
-    const { password, ...result } = user;
-
-    return result;
-    // return { username: user.name };
-    // } catch (e) {
-    //   throw new UnauthorizedException();
-    // }
   }
 
   @Post('logout')
