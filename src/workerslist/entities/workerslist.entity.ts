@@ -59,10 +59,10 @@ export class Workerslist {
   })
   lastupdated: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Workerslist Actions',
-    description: 'Title of the Workerslist',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Workerslist Actions',
+  //   description: 'Title of the Workerslist',
+  // })
+  // actions: string;
 }
