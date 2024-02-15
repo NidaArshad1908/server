@@ -87,10 +87,10 @@ export class SaleInvoiceslist {
   })
   outstanding: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Sale Invoices List Actions',
-    description: 'Title of the Sale Invoices List',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Sale Invoices List Actions',
+  //   description: 'Title of the Sale Invoices List',
+  // })
+  // actions: string;
 }
