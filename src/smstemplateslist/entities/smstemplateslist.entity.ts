@@ -52,10 +52,10 @@ export class Smstemplateslist {
   })
   lastupdated: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Sms Templates List Actions',
-    description: 'Title of the Sms Templates List',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Sms Templates List Actions',
+  //   description: 'Title of the Sms Templates List',
+  // })
+  // actions: string;
 }

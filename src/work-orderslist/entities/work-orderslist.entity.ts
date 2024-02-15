@@ -136,10 +136,10 @@ export class WorkOrderslist {
   })
   lastupdated: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'WorkOrderslist Actions',
-    description: 'Title of the WorkOrderslist',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'WorkOrderslist Actions',
+  //   description: 'Title of the WorkOrderslist',
+  // })
+  // actions: string;
 }

@@ -17,10 +17,10 @@ export class Usersrolelist {
   })
   role: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Users Role List Actions',
-    description: 'Title of the Users Role List',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Users Role List Actions',
+  //   description: 'Title of the Users Role List',
+  // })
+  // actions: string;
 }

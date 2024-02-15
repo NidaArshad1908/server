@@ -52,10 +52,10 @@ export class Countrieslist {
   })
   lastupdated: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Countries List Actions',
-    description: 'Title of the Countries List',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Countries List Actions',
+  //   description: 'Title of the Countries List',
+  // })
+  // actions: string;
 }

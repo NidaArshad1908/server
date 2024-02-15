@@ -73,24 +73,24 @@ export class Customerslist {
   })
   lastupdated: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Customers List Actions',
-    description: 'Title of the Customers List',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Customers List Actions',
+  //   description: 'Title of the Customers List',
+  // })
+  // actions: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Customers List Code',
-    description: 'Title of the Customers List',
-  })
-  select: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Customers List Code',
+  //   description: 'Title of the Customers List',
+  // })
+  // select: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Customers List Code',
-    description: 'Title of the Customers List',
-  })
-  sms: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Customers List Code',
+  //   description: 'Title of the Customers List',
+  // })
+  // sms: string;
 }

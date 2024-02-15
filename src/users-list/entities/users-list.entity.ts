@@ -52,10 +52,10 @@ export class UsersList {
   })
   status: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Users List Actions',
-    description: 'Title of the Users List',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Users List Actions',
+  //   description: 'Title of the Users List',
+  // })
+  // actions: string;
 }

@@ -52,10 +52,10 @@ export class Brandrateslist {
   })
   lastupdated: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Brandrate List Actions',
-    description: 'Title of the Brandrate List',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Brandrate List Actions',
+  //   description: 'Title of the Brandrate List',
+  // })
+  // actions: string;
 }
