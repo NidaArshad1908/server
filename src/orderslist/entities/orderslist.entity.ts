@@ -80,19 +80,19 @@ export class Orderslist {
   })
   dues: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Order List Last Status',
-    description: 'Title of the Order List',
-  })
-  status: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Order List Last Status',
+  //   description: 'Title of the Order List',
+  // })
+  // status: string;
 
-  @Column()
-  @ApiProperty({
-    example: 'Order List Actions',
-    description: 'Title of the Order List',
-  })
-  actions: string;
+  // @Column()
+  // @ApiProperty({
+  //   example: 'Order List Actions',
+  //   description: 'Title of the Order List',
+  // })
+  // actions: string;
 
   @Column()
   @ApiProperty({
