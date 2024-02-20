@@ -50,7 +50,7 @@ export class Orderslist {
     example: 'Order List Last Updated',
     description: 'Title of the Order List',
   })
-  quality: string;
+  quantity: string;
 
   @Column()
   @ApiProperty({
@@ -78,8 +78,7 @@ export class Orderslist {
     example: 'Order List Dues',
     description: 'Title of the Order List',
   })
-  dues: string; 
-  
+  dues: string;
 
   // @Column()
   // @ApiProperty({
