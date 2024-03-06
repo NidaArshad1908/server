@@ -78,8 +78,7 @@ export class Orderslist {
     example: 'Order List Dues',
     description: 'Title of the Order List',
   })
-  dues: string; 
-  
+  dues: string;
 
   // @Column()
   // @ApiProperty({
