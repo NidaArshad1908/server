@@ -45,6 +45,8 @@ export class Orderslist {
   })
   rates: string;
 
+  
+
   @Column()
   @ApiProperty({
     example: 'Order List Last Updated',
